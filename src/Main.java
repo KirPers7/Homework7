@@ -11,9 +11,9 @@ public class Main {
         while (totalSum <= 2_459_000) {
             totalSum += cash;
             month++;
-            if (totalSum >= 2_459_000) {
-                System.out.println("Месяц " + month + ", сумма накоплений равна " + totalSum + " рублей");
-            }
+
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalSum + " рублей");
+
         }
         System.out.println();
 
@@ -109,9 +109,11 @@ public class Main {
         System.out.println("Задание 8");
 
         short cometOverEarth = 0;
+        short lowerLimit = 1824;
+        short upperLimit = 2124;
 
-        while (cometOverEarth <= 2124) {
-            if (cometOverEarth >= 1824) {
+        while (cometOverEarth <= upperLimit) {
+            if (cometOverEarth >= lowerLimit) {
                 System.out.println(cometOverEarth);
             }
             cometOverEarth += 79;
